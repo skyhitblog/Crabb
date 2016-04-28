@@ -12,6 +12,7 @@ class ResumesController < ApplicationController
 
   def create
     @resume = Resume.new(resume_params)
+    @resume.user = current_user
 
     if @resume.save
       redirect_to resumes_path, notice: "The resume #{@resume.name} has been uploaded."

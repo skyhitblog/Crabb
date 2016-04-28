@@ -9,6 +9,9 @@ gem 'sqlite3'
 # Devise for Authentication
 gem 'devise'
 
+# For attributes
+gem 'protected_attributes'
+
 # Dot ENV
 gem 'dotenv-rails'
 
