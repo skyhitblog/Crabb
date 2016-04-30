@@ -10,7 +10,7 @@ gem 'sqlite3'
 gem 'devise'
 
 # For attributes
-gem 'protected_attributes'
+#gem 'protected_attributes'
 
 # Dot ENV
 gem 'dotenv-rails'
