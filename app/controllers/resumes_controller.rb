@@ -1,9 +1,9 @@
 class ResumesController < ApplicationController
 
-  before_action :authenticate_user!
+  before_action :authenticate_user! 
 
   def index
-    @resumes = Resume.all
+    @resumes = current_user.resumes.all
   end
 
   def new
@@ -11,8 +11,7 @@ class ResumesController < ApplicationController
   end
 
   def create
-    @resume = Resume.new(resume_params)
-    @resume.user = current_user
+    @resume = current_user.resumes.new(resume_params)
 
     if @resume.save
       redirect_to resumes_path, notice: "The resume #{@resume.name} has been uploaded."
