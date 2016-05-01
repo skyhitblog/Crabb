@@ -21,7 +21,8 @@ gem 'sass-rails', '~> 4.0.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
-gem 'carrierwave', '~> 0.9'
+gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
+
 gem 'bootstrap-sass', '~> 2.3.2'
 
 # Use CoffeeScript for .js.coffee assets and views
