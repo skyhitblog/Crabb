@@ -14,7 +14,7 @@ class ResumesController < ApplicationController
     @resume = current_user.resumes.new(resume_params)
 
     if @resume.save
-      redirect_to resumes_path, notice: "Your file #{@resume.name} has been uploaded to the cloud. :)"
+      redirect_to resumes_path, notice: "Your file #{@resume.name} has been uploaded to the cloud."
     else
       render "new"
     end
