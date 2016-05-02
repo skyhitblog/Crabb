@@ -18,8 +18,8 @@
   <tbody>
     <% @resumes.each do |resume| %>
       <tr>
-        <td><%= resume.name %></td>
-        <td><%= link_to "Download", resume.attachment_url %></td>
+        <td><%= resume.attachment_identifier %></td>
+        <td><%= link_to "Download", resume.attachment_url, class: "btn btn-1" %></td>
         <td><%= button_to "Delete",  resume, method: :delete, class: "btn btn-danger", confirm: "Are you sure that you wish to delete #{resume.name}?" %></td>
       </tr>
     <% end %>

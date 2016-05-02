@@ -10,10 +10,8 @@
 
 <div class="well">
   <%= form_for @resume, html: { multipart: true } do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
     <%= f.label :attachment %>
     <%= f.file_field :attachment %>
-    <%= f.submit "Save", class: "btn btn-primary" %>
+    <%= f.submit "Start Uploading", class: "btn btn-primary" %>
   <% end %>
 </div>
