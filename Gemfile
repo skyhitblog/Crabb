@@ -18,6 +18,9 @@ gem 'devise'
 # Dot ENV
 gem 'dotenv-rails'
 
+#Frontend design"
+gem 'frontend-generators'
+
 #Admin Backend
 gem 'rails_admin'
 
